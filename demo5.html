@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sprites图演示</title>
+  <style>
+    ul,h3{
+      margin:0;
+      padding:0;
+    }
+    h3{
+      display: block;
+    }
+    .sprites{
+      position: relative;
+      width: 150px;
+      border: 1px solid #bbb;
+      background-color: #f8f8f8;
+    }
+    li{
+      display: block;
+      height: 31px;
+      line-height: 31px;
+      overflow: hidden;
+      margin: 1px 10px;
+      vertical-align: bottom;
+      border-bottom: 1px solid #dedede;
+    }
+    li:hover{
+      background-color: #666666;
+    }
+    li h3{
+      font-size: 13px;
+      font-weight: 400;
+    }
+    li i{
+      display: inline;
+      float: left;
+      margin: 3px 10px 0 0;
+      height: 24px;
+      width: 30px;
+    }
+    li>i{
+      background:url('http://img.mukewang.com/539a950e00015ba500710200.jpg');
+    }
+    .opt2>i{
+        background-position:0 -24px;
+    }
+    .opt3>i{
+        background-position:0 -48px;
+    }
+    .opt4>i{
+        background-position:0 -72px;
+    }
+    .opt5>i{
+        background-position:0 -96px;
+    }
+    .opt6>i{
+        background-position:0 -120px;
+    }
+    .opt7>i{
+        background-position:0 -144px;
+    }
+    .opt8>i{
+        background-position:0 -168px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sprites">
+    <ul>
+      <li class="opt1"><i></i><h3>服装内衣</h3></li>
+      <li class="opt2"><i></i><h3>鞋包配饰</h3></li>
+      <li class="opt3"><i></i><h3>运动户外</h3></li>
+      <li class="opt4"><i></i><h3>珠宝手表</h3></li>
+      <li class="opt5"><i></i><h3>手机数码</h3></li>
+      <li class="opt6"><i></i><h3>家电办公</h3></li>
+      <li class="opt7"><i></i><h3>护肤彩妆</h3></li>
+      <li class="opt8"><i></i><h3>母婴用品</h3></li>
+    </ul>
+  </div>
+</body>
+</html>
