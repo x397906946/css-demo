@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>浮动演示</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    nav {
+      width: 600px;
+      margin: 0auto;
+    }
+    nav ul{
+      list-style: none;
+    }
+    
+    nav a{
+      text-decoration: none;
+      color: #000;
+      display: block;
+      padding: 10px 15px;
+    }
+    nav a:hover{
+      color:#000;
+      background: rgba(0,0,0,0.4);
+    }
+    
+    .menu{
+      background: rgba(0,0,0,0.05);
+      box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+    }
+    .menu:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .menu>li{
+      float: left;
+      position: relative;
+    }
+    .menu>li:hover .child{
+      display: block;
+    }
+    .child{
+      position: absolute;
+      top: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+      min-width: 160px;
+      display: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">作品</a></li>
+      <li>
+        <a href="#">更多</a>
+        <ul class="child">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">博客</a></li>
+          <li><a href="#">知乎</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
