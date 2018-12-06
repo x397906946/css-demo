@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>外边距合并演示</title>
+  <style>
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    .layout{
+      width: 800px;
+      margin: 0 auto;
+    }
+    h1{
+      color: #666;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+    
+    .list{
+      margin-left: -10px;
+    }
+    .list:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    
+    .list .card{
+      float: left;
+      margin-left: 10px;
+      margin-top: 30px;
+      list-style: none;
+      width: 260px;
+      height: 80px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .text{
+      text-align: center;
+      line-height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <h1>风景列表</h1>
+    <ul class="list">
+      <li class="card">
+        <div class="text">
+          风景如画
+        </div>
+      </li>
+      <li class="card">
+        <div class="text">
+          风景如画
+        </div>
+      </li>
+      <li class="card">
+        <div class="text">
+          风景如画
+        </div>
+      </li>
+      <li class="card">
+        <div class="text">
+          风景如画
+        </div>
+      </li>
+      <li class="card">
+        <div class="text">
+          风景如画
+        </div>
+      </li>
+      <li class="card">
+        <div class="text">
+          风景如画
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
